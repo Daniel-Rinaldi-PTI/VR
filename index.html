@@ -5,9 +5,10 @@
   </head>
   <body>
     <a-scene>
-<a-box position="0 1.6 -5" 
-  animation="property: position; to: 1 3 -10; dur: 2000; easing: linear; loop: true" 
-  color="green">
+<a-box position="0 1.6 -5"  
+  color="green"
+             event-set__mouseenter = "animation:property: position; to: 1 3 -10; dur: 2000; easing: linear; loop: true; material.color: green"
+           event-set__mouseleave = "animation:property: position; to: 1 3 -10; dur: 2000; easing: linear; loop: true; material.color: blue">
 </a-box>
           <a-camera>
       <a-cursor></a-cursor>
