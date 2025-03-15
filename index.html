@@ -5,11 +5,10 @@
   </head>
   <body>
     <a-scene>
-<a-box position="0 1.6 -5"  
-  color="red"
-event-set__mouseenter = "animation:property: rotation; by: 0 45 45; dur: 2000; easing: linear; loop: true"
-event-set__mouseleave = "animation:property: rotation; by: 0 0 45; dur: 2000; easing: linear; loop: true">
-</a-box>
+  <a-assets>
+    <a-asset-item id="mobil" src="https://github.com/Daniel-Rinaldi-PTI/VR/blob/main/Mobil.gltf"></a-asset-item>
+  </a-assets>
+  <a-entity gltf-model="#mobil"></a-entity>
           <a-camera>
       <a-cursor></a-cursor>
     </a-camera>
