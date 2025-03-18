@@ -9,7 +9,7 @@
         <a-asset-item id="carModel" src="https://daniel-rinaldi-pti.github.io/VR/Mobil.obj"></a-asset-item>
         <a-asset-item id="carMtl" src="https://daniel-rinaldi-pti.github.io/VR/Mobil.mtl"></a-asset-item>
        	<a-asset-item id="tamanGLTF" src="https://daniel-rinaldi-pti.github.io/VR/scene.gltf"></a-asset-item>
-      	<audio id="meow" src="https://daniel-rinaldi-pti.github.io/VR/Meow.mp3"></audio>
+      	<audio id="sample" src="https://daniel-rinaldi-pti.github.io/VR/sample.mp3"></audio>
       </a-assets>
 
       <!-- BACKGROUND -->
@@ -27,14 +27,7 @@
       <a-light type="directional" position="3 5 2" intensity="0.8" castShadow="true"></a-light>
 
       <!-- AUDIO -->
-      <a-entity sound="src: #meow; autoplay: true; loop: true"></a-entity>
-      <a-entity 
-        geometry="primitive: box" 
-        material="color: red" 
-        position="0 1 -3"
-        sound="src: #meow"
-        event-set__click="sound.play: true">
-      </a-entity>
+      <a-entity sound="src: #sample; autoplay: true; loop: true"></a-entity>
     
       <!-- TAMAN -->
       <a-entity id="taman" gltf-model="#tamanGLTF" position="0 0 0" scale="200 200 200"></a-entity>
