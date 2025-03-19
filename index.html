@@ -9,6 +9,7 @@
         <a-asset-item id="carModel" src="https://daniel-rinaldi-pti.github.io/VR/Mobil.obj"></a-asset-item>
         <a-asset-item id="carMtl" src="https://daniel-rinaldi-pti.github.io/VR/Mobil.mtl"></a-asset-item>
        	<a-asset-item id="tamanGLTF" src="https://daniel-rinaldi-pti.github.io/VR/scene.gltf"></a-asset-item>
+        <a-asset-item id="mobilGLTF" src="https://daniel-rinaldi-pti.github.io/VR/aston_martin_vulcan/scene.gltf"></a-asset-item>
       	<audio id="sample" src="https://daniel-rinaldi-pti.github.io/VR/Meow.mp3"></audio>
       </a-assets>
 
@@ -30,8 +31,10 @@
       <a-entity sound="src: #sample; autoplay: true; loop: true"></a-entity>
     
       <!-- TAMAN -->
-      <a-entity id="taman" gltf-model="#tamanGLTF" position="0 0 0" scale="200 200 200"></a-entity>
+      <a-entity id="taman" gltf-model="#mobilGLTF" position="0 2 0"></a-entity>
 
+      <!-- MOBIL BARU -->
+      <a-entity id="mobilBaru" gltf-model="#tamanGLTF" position="0 0 0" scale="200 200 200"></a-entity>
       
       <!-- MOBIL TANPA ANIMASI -->
       <a-entity id="car0" obj-model="obj: #carModel; mtl: #carMtl" position="0 0 -8" rotation="0 90 0" scale="1 1 1"></a-entity>
